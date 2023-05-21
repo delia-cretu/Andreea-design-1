@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
-  --text-color-title: #212121;
+  /* --text-color-title: #212121;
   --text-color-body: #757575;
   --color-active: #2196f3;
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Roboto", sans-serif; */
   --letter-spacing: 0.03em;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -14,10 +14,13 @@
 }
 
 body {
-  color: var(--text-color-title);
-  font-family: var(--font-family);
+  /* color: var(--text-color-title);
+  font-family: var(--font-family); */
   background-color: rgb(255, 232, 212);
-  padding: 40px 0;
+}
+
+header {
+  margin-top: 40px;
 }
 
 h1 {
@@ -56,6 +59,8 @@ nav {
   display: flex;
   justify-content: center;
   padding-top: 15px;
+  /* background-color: rgb(164, 79, 30);
+  padding-bottom: 15px; */
 }
 
 nav ul li {
@@ -67,6 +72,7 @@ nav ul li:first-of-type {
 
 nav ul a {
   color: black;
+  /* color: white; */
 }
 
 nav ul a:hover,
@@ -121,7 +127,7 @@ nav ul a:focus {
 }
 
 .btn {
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: rgb(196, 104, 71);
   border: none;
   padding: 10px 30px;
@@ -151,8 +157,8 @@ nav ul a:focus {
 
 .second-section ul {
   margin-top: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 75px;
+  padding-right: 75px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -190,8 +196,8 @@ nav ul a:focus {
 .third-section-left img {
   width: 400px;
   height: 300px;
-  margin-left: 100px;
-  margin-top: 75px;
+  margin-left: 75px;
+  margin-top: 50px;
   position: relative;
   z-index: 3;
 }
@@ -208,20 +214,20 @@ nav ul a:focus {
 
 .third-section-right {
   width: 50%;
-  padding: 0 120px 0 50px;
+  padding: 0 120px 0 30px;
   margin-top: 75px;
 }
 
 .third-section-right p {
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: left;
 }
 
 /* Fourth section */
 
 .fourth-section {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 75px;
+  padding-right: 75px;
   margin-top: 75px;
 }
 
@@ -251,8 +257,12 @@ nav ul a:focus {
 
 footer {
   margin-top: 75px;
-  background-color: rgb(255, 229, 199);
+  /* background-color: rgb(255, 229, 199); */
+  background-color: rgb(164, 79, 30);
   color: white;
   height: 60px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
