@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
-  /* --text-color-title: #212121;
-  --text-color-body: #757575;
-  --color-active: #2196f3;
-  --font-family: "Roboto", sans-serif; */
-  --letter-spacing: 0.03em;
+  --background-first-color: #5b6d5b;
+  --background-second-color: #ca8a8b;
+  --background-third-color: #e2bcb7;
+  --background-fourth-color: #f6e6e4;
+  --font-family: "Roboto", sans-serif;
+  --letter-spacing: 0.01em;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -14,9 +15,11 @@
 }
 
 body {
-  /* color: var(--text-color-title);
-  font-family: var(--font-family); */
-  background-color: rgb(255, 232, 212);
+  /* color: var(--text-color-title); */
+  color: #232427;
+  font-family: var(--font-family);
+  background-color: var(--background-fourth-color);
+  letter-spacing: var(--letter-spacing);
 }
 
 header {
@@ -72,12 +75,12 @@ nav ul li:first-of-type {
 
 nav ul a {
   color: black;
-  /* color: white; */
+  color: var(--background-first-color);
 }
 
 nav ul a:hover,
 nav ul a:focus {
-  color: rgb(176, 74, 37);
+  color: var(--background-second-color);
   font-weight: bold;
 }
 
@@ -106,20 +109,33 @@ nav ul a:focus {
   width: 50%;
 }
 
-.right-box img {
+.left-box {
+  background-color: var(--background-third-color);
+  height: 500px;
+}
+
+.right-box {
+  margin-top: 40px;
+  margin-left: 75px;
+  height: 400px;
+  background-color: var(--background-second-color);
+}
+
+/* .right-box img {
   padding-top: 40px;
   padding-left: 75px;
-  width: 4750px;
+  width: 475px;
   height: 450px;
-}
+} */
 
 .center-box {
   background-color: white;
-  width: 400px;
-  padding: 40px;
+  width: 380px;
+  padding: 30px;
   position: absolute;
   left: 425px;
   top: 125px;
+  text-align: left;
 }
 
 .center-box p {
@@ -127,8 +143,8 @@ nav ul a:focus {
 }
 
 .btn {
-  margin-top: 25px;
-  background-color: rgb(196, 104, 71);
+  margin-top: 20px;
+  background-color: var(--background-second-color);
   border: none;
   padding: 10px 30px;
   color: white;
@@ -138,7 +154,7 @@ nav ul a:focus {
 }
 
 .btn:hover {
-  background-color: rgb(176, 74, 37);
+  background-color: var(--background-third-color);
 }
 
 /* Second section */
@@ -166,14 +182,23 @@ nav ul a:focus {
 }
 
 .second-section ul p {
-  margin-top: 10px;
+  margin-top: 210px;
   font-weight: bold;
 }
 
+.second-section li {
+  width: 250px;
+  height: 200px;
+}
+
+.second-section li {
+  border: 1px solid grey;
+  background-color: white;
+}
 .second-section-orange-box {
   height: 150px;
   width: 850px;
-  background-color: rgb(202, 117, 86);
+  background-color: var(--background-second-color);
   padding-left: 150px;
   margin-left: 150px;
   position: absolute;
@@ -193,17 +218,18 @@ nav ul a:focus {
   z-index: 1;
 }
 
-.third-section-left img {
+.third-section.img {
   width: 400px;
   height: 300px;
   margin-left: 75px;
   margin-top: 50px;
   position: relative;
   z-index: 3;
+  background-color: var(--background-fourth-color);
 }
 
 .third-section-orange-square {
-  background-color: rgb(215, 138, 66);
+  background-color: var(--background-third-color);
   width: 400px;
   height: 300px;
   position: absolute;
@@ -243,14 +269,17 @@ nav ul a:focus {
   height: 80px;
 }
 
-.fourth-section li:nth-of-type(3n) {
-  background-color: rgb(210, 126, 47);
+.fourth-section li:nth-of-type(4n + 1) {
+  background-color: var(--background-first-color);
 }
-.fourth-section li:nth-of-type(3n + 1) {
-  background-color: rgb(164, 79, 30);
+.fourth-section li:nth-of-type(4n + 2) {
+  background-color: var(--background-second-color);
 }
-.fourth-section li:nth-of-type(3n + 2) {
-  background-color: rgb(255, 229, 199);
+.fourth-section li:nth-of-type(4n + 3) {
+  background-color: var(--background-third-color);
+}
+.fourth-section li:nth-of-type(4n) {
+  background-color: var(--background-fourth-color);
 }
 
 /* Footer */
@@ -258,7 +287,7 @@ nav ul a:focus {
 footer {
   margin-top: 75px;
   /* background-color: rgb(255, 229, 199); */
-  background-color: rgb(164, 79, 30);
+  background-color: var(--background-first-color);
   color: white;
   height: 60px;
   text-align: center;
